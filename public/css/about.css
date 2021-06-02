@@ -1,0 +1,62 @@
+@import "./navbar.css";
+@import "./footer.css";
+
+
+/* Header Part */
+
+.header-part-left figure img {
+    height: 70rem;
+    /* box-shadow: 0 30px 30px -6px #0097e6; */
+    filter: drop-shadow(-1rem 0.5rem 0rem #0097e6);
+
+}
+
+.header-part-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-part-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-part-right p{
+    font-size: 2rem;
+}
+
+.header-part-right h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.header-part-right .clr{
+    color: #0097e6;
+}
+
+
+
+@media (max-width: 1024px) and (min-width:767px){
+
+    .header-part-left{
+        margin: 10rem 10rem;
+        width: 65vw;
+    }
+    
+
+
+    .header-part-right{
+        margin: 10rem 10rem;
+        width: 65vw;
+    }
+}
+
+
+
+
+/* #1e272e main bg*/
+/* #0097e6  main color*/

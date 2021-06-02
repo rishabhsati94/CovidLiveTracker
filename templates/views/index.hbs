@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+{{>header}}
+
+<body>
+
+    <!-- Navbar -->
+
+    {{>navbar}}
+
+    <!-- Header -->
+    <div class="mainheader">
+        <div class="row w-100 h-100">
+            <!-- left side -->
+            <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
+                <div class="leftside">
+                    <img src="./images/6th.png" alt="earth" class="img-fluid.">
+                </div>
+
+            </div>
+            <!-- Right Side -->
+            <div class="col-lg-7 col-md- col-12 order-lg-2 order-1">
+                <div class="rightside">
+                    <h1>Let's Stay Safe & Fight Together Against Cor<span class="rot"><img src="./images/2nd.png"
+                                alt="oimage"></span>na Virus</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updates -->
+    <section class="updates">
+        <div class="my-3 coronaUpdates">
+            <h3 class="text-uppercase text-center">Covid 19 Updates</h3>
+        </div>
+        <div class="effects">
+            <div class="count">
+                <h1 id="TotalConfirmed"></h1>
+                <p>Total Case*</p>
+            </div>
+            <div class="count">
+                <h1 id="TotalDeaths"></h1>
+                <p>Total Death*</p>
+            </div>
+            <div class="count">
+                <h1 id="TotalRecovered"></h1>
+                <p>Total Recovered*</p>
+            </div>
+            <div class="count">
+                <h1 id="NewConfirmed"></h1>
+                <p>New Cases*</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    {{>footer}}
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    {{>script}}
+    <script src="./js/home.js"></script>
+
+</body>
+
+</html>
+

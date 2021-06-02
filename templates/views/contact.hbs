@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+{{>header}}
+
+
+<body>
+
+    <!-- Navbar -->
+    {{>navbar}}
+    <div id="message"></div>
+
+    <!-- Header -->
+    <div class="container-fluid pt-5 pb-5 ">
+        <div class="text-center mb-5 mt-4 header">
+            <h1>ASAP</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8offset-lg-2 col-12">
+                    <form action= '/contact', method= "post", class="frm">
+
+                    {{!-- User Name --}}
+                        <div class="form-group row my-3">
+                            <label for="username" class="col-sm-2 col-form-label">User Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control " id="username" placeholder="Name" name="userName">
+                                <p id="unamemsg" class="form-text">
+                                </p>
+                            </div>
+                        </div>
+
+                    {{!-- user Email --}}
+                        <div class="form-group row my-3">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="abc@xyz.com" name="userEmail" >
+                                <p id="emailmsg" class="form-text">
+                                </p>
+                            </div>
+                        </div>
+
+                    {{!-- Selection --}}
+                        <div class="form-group row my-3">
+                            <label for="select" class="col-sm-2 col-form-label" >Select Coronavirus Symptoms</label>
+
+                            <div class="col-sm-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="cough" 
+                                        value="Cough">
+                                    <label class="form-check-label" for="serveCough">Cough</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="outOfBreathe" name="outofBreathe"
+                                        value="Out of Breathe">
+                                    <label class="form-check-label" for="outOfBreathe">Out of Breathe</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="fever" value="Fever" name="fever">
+                                    <label class="form-check-label" for="fever">Fever</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="flu" value="Flu" name="flu">
+                                    <label class="form-check-label" for="flu">Flu</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="headache" value="Headache" name="headache">
+                                    <label class="form-check-label" for="headache">Headache</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="soreThroat" value="Sore Throat" name="throat">
+                                    <label class="form-check-label" for="soreThroat">Sore Throat</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    {{!-- Address --}}
+                        <div class="form-group row my-3">
+                            <label for="address" class="col-sm-2 col-form-label">Address</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="address" rows="3" name="address" placeholder="Enter Your Address"></textarea>
+                                <p id="adrs" class="form-text"></p>
+                            </div>
+                        </div>
+
+                    {{!-- contact --}}
+                        <div class="form-group row my-3">
+                            <label for="phone" class="col-sm-2 col-form-label">Contact Number</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="contact" id="phone" placeholder="+91-0000000000">
+                                <p id="phon" class="form-text"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button id="submit" class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    {{>footer}}
+
+</body>
+
+
+</script>
+
+<script src="./js/contact.js"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+{{>script}}
+
+</html>

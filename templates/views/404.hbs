@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+{{>header}}
+
+<body>
+
+    <!-- Navbar -->
+
+    {{>navbar}}
+    {{!-- header --}}
+    <div class=".container-fluid header-part">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- Left side div -->
+                    <div class="col-md-12 col-12 header align-items-center">
+                        <figure>
+                            <img src="./images/404.jpg" alt="rishabh" class="img-fluid" title="author">
+                        </figure>
+                        <h1>{{errormsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    {{>footer}}
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    {{>script}}
+
+
+</body>
+
+</html>

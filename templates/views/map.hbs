@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+{{>header}}
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+<body>
+
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Header -->
+    <div id='map'></div>
+
+
+    <!-- Footer -->
+    {{>footer}}
+
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicmlzaGFiaHNhdGkiLCJhIjoiY2tvanMwamp2MDBuZDJ4cGk0bTNvYmhleiJ9.2pacyRPSoGVhqoNrwgERgQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 3,
+        center: [50,30]
+    });
+</script>
+
+<script src="./js/map.js"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+{{>script}}
+
+</html>

@@ -1,0 +1,36 @@
+@import "./navbar.css";
+@import "./footer.css";
+
+.tempForm{
+    width: 60%;
+    position: relative;
+    margin: 5rem auto 6rem;
+}
+
+.tempForm input[type="text"]{
+    width: 100%;
+    padding: 3rem 4rem;
+    background: #5e5f66;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+::placeholder{
+    color: #fff;;
+}
+
+.headerSection h1{
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+}
+
+.fs{
+    font-size: 2rem;
+}

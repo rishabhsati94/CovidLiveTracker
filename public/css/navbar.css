@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+html{
+    font-size: 62.5%;           /* 1 rem = 10px; */
+    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    margin: 0;
+}
+
+
+/* Navbar */
+.nav-menu{
+    background-color: #1e272e;
+}
+
+.navbar{
+    color: #fff;
+    background-color: #1e272e;
+    padding: 2rem 0;
+}
+
+.navbar li {
+    margin: 0 2rem;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar a:hover{
+    color: #0097e6;
+}
+
+.navbar-toggler{
+    background-color: white;
+}

@@ -1,0 +1,130 @@
+@import "./navbar.css";
+@import "./footer.css";
+
+
+/* index Header */
+
+.leftside{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.leftside img{
+    margin: 18rem 4rem 8rem 15rem;
+    width:35rem;
+    height: auto;
+    animation: heart 10s linear infinite;
+}
+
+@keyframes heart{
+    0%{
+        transform: scale(.25);
+    }
+    20%{
+        transform: scale(.50);
+    }
+    40%{
+        transform: scale(.75);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1.50);
+    }
+}
+
+.rightside{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.rightside h1 {
+
+    margin-top: 11rem;
+    font-size: 9rem;
+}
+
+.rightside h1 span img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.rot img{
+    transition: all linear;
+    animation: rot 3s linear infinite;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (min-width:250px) and (max-width: 800px) {
+    
+        .leftside img{
+            margin: 5rem 0rem 0rem 8rem;
+            width:20rem;
+            height: auto;
+        
+        }
+        .rightside h1 {
+            margin: 4rem 2rem 0rem 2rem;
+            font-size: 4rem;
+        }
+        .rightside h1 span img{
+            width: 4rem;
+            height: 4rem;
+        }
+  }
+
+
+  /* Section */
+.coronaUpdates h3{
+    font-size: 4rem;
+    color: #f44336;
+    margin: 5rem 0rem;
+    border-bottom: 5px solid #8e8282;
+    
+}
+
+.effects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+
+}
+
+.count h1, .count p{
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media (min-width:250px) and (max-width: 800px) {
+   
+    .coronaUpdates h3{
+        font-size: 4rem;
+        color: #f44336;
+        margin: 5rem 0rem;
+        border-bottom: 5px solid #8e8282;
+        
+    }
+
+    .effects{
+        flex-direction: column;
+    
+    }
+    
+}

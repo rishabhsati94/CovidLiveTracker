@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+{{>header}}
+
+<body>
+
+    <!-- Navbar -->
+
+    {{>navbar}}
+
+    {{!-- Header --}}
+    <section>
+        <div class="container-fluid">
+
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="tempForm">
+                        <input type="text" id="countryName" placeholder="Enter Country Name" autocomplete="off">
+                    </form>
+                </div>
+
+
+                <div class="headerSection">
+                    <h1>Covid-19 Live UPDATES OF THE INDIA</h1>
+                </div>
+
+                <div class="table-resonsive">
+                    <table class="table table-bordered table-striped text-center fs" id="tabVal">
+                        <tr>
+                            <th>State</th>
+                            <th>Active</th>
+                            <th>Confirmed</th>
+                            <th>Recovered</th>
+                            <th>Deaths</th>
+                            <th>Last Update Time</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    {{>footer}}
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    {{>script}}
+    <script src="./js/indiacases.js"></script>
+
+
+</body>
+
+</html>
